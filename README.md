@@ -12,3 +12,10 @@ Execute: `conda install --yes --file requirements.txt`
 
 ## Testing
 Execute: `pytest`
+
+## Executing script
+- Before executing script you must install dependencies (see "Install dependencies section above").
+- After installing dependencias you can execute script with: `python3 getstockdata.py`.
+
+## Help
+You can get help by executing: `python3 getstockdata.py --help`
