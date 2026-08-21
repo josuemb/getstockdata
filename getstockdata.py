@@ -29,9 +29,6 @@ DEFAULT_START_DATE = DEFAULT_END_DATE - \
 DEFAULT_START_DATE_STRING = DEFAULT_START_DATE.strftime(DEFAULT_FORMAT_DATE)
 DEFAULT_GROUP_BY = "ticker"
 DEFAULT_PRICE_TO_GET = "Close"
-DEFAULT_AUTO_ADJUST = True
-
-
 def process_arguments(arguments=None):
     '''
     Process provided arguments.
@@ -120,7 +117,7 @@ def get_stock_data(file, tickers_str, start_str, end_str):
     None.
     '''
     data = yf.download(tickers_str, start=start_str, end=end_str,
-                       group_by=DEFAULT_GROUP_BY, auto_adjust=DEFAULT_AUTO_ADJUST)
+                       group_by=DEFAULT_GROUP_BY)
     if data.empty:
         print("ERROR: Not able to read stock data")
         sys.exit(1)

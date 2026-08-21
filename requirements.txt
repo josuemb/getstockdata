@@ -1,4 +1,4 @@
-pandas==2.1.2
+pandas==3.0.5
 pytest==9.0.3
-python_dateutil==2.8.2
-yfinance==0.2.31
+python_dateutil==2.9.0.post0
+yfinance==1.6.0
