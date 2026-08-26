@@ -2,7 +2,7 @@
 Get stock data to a csv file using yfinance
 
 ## Prerequisites
-Python >= 3.9
+Python >= 3.12
 
 ## Install dependencies
 ### With pip
